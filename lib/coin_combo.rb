@@ -16,8 +16,8 @@ class CoinCalculator
   end
 
   def filter_coin_list()
-    # coins = coin_list()
-    # coins.select{ |c| c < @total_cents}
+    coins = coin_list()
+    coins.select{ |c| c <= @total_cents}
   end
   
 end
