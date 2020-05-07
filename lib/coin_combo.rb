@@ -14,5 +14,10 @@ class CoinCalculator
       0.01
     ]
   end
+
+  def filter_coin_list()
+    # coins = coin_list()
+    # coins.select{ |c| c < @total_cents}
+  end
   
 end
