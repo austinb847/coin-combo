@@ -7,7 +7,6 @@ class CoinCalculator
 
   def coin_list()
     return [
-      0.50,
       0.25,
       0.10,
       0.05,
