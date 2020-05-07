@@ -6,13 +6,13 @@ class CoinCalculator
   end
 
   def coin_list()
-    # return [
-    #   0.50,
-    #   0.25,
-    #   0.10,
-    #   0.05,
-    #   0.01
-    # ]
+    return [
+      0.50,
+      0.25,
+      0.10,
+      0.05,
+      0.01
+    ]
   end
   
 end
