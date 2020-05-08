@@ -7,16 +7,22 @@ class CoinCalculator
 
   def coin_list()
     return [
-      0.25,
-      0.10,
-      0.05,
-      0.01
+      25,
+      10,
+      5,
+      1
     ]
   end
 
-  def filter_coin_list()
+  def generate_coin_combo()
+    amount = @total_cents
     coins = coin_list()
-    coins.select{ |c| c <= @total_cents}
+    coins.sort.
+          reverse.
+          map{|coin| f = amount/coin; amount %= coin; Array.new(f){coin} }.
+          flatten
   end
-  
 end
+
+
+
